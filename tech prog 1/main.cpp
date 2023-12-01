@@ -10,7 +10,7 @@ int main()
 
 menu:
 	std::cout
-		<< "1. Add 2D figure\n"
+		<< "1 - Add 2D figure\n"
 		<< "2. Add 3D figure\n"
 		<< "3. Remove 2D figure\n"
 		<< "4. Remove 3D figure\n"
