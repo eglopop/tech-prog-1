@@ -4,11 +4,11 @@ void Figure3D::createFigure3D()
 {
 	std::cout << "Enter 3D Figure's type: ";
 	std::cin >> type;
-	std::cout << "Enter 3D Figure's dimensions: ";
+	std::cout << "Enter 3D Figure's sizes: ";
 	std::cin >> dimensions;
 	std::cout << "Enter 3D Figure's volume: ";
 	std::cin >> volume;
-	std::cout << "Enter 3D Figure's area on screen: ";
+	std::cout << "Enter 3D Figure's drawing on the screen: ";
 	std::cin >> areaOnScreen;
 }
 

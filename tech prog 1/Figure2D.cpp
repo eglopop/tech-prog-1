@@ -4,11 +4,11 @@ void Figure2D::createFigure2D()
 {
 	std::cout << "Enter 2D Figure's type: ";
 	std::cin >> type;
-	std::cout << "Enter 2D Figure's dimensions: ";
+	std::cout << "Enter 2D Figure's sizes: ";
 	std::cin >> dimensions;
-	std::cout << "Enter 2D Figure's area: ";
+	std::cout << "Enter 2D Figure's square: ";
 	std::cin >> area;
-	std::cout << "Enter 2D Figure's area on screen: ";
+	std::cout << "Enter 2D Figure's drawing on the screen: ";
 	std::cin >> areaOnScreen;
 }
 
