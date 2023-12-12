@@ -8,4 +8,3 @@ public:
 	void createFigure2D();
 	void describe();
 };
-

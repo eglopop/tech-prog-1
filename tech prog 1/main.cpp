@@ -10,14 +10,14 @@ int main()
 
 menu:
 	std::cout
-		<< "1 - Add 2D figure\n"
-		<< "2 - Add 3D figure\n"
-		<< "3 - Remove 2D figure\n"
-		<< "4 - Remove 3D figure\n"
-		<< "5 - Display contents\n"
-		<< "6 - Save to file\n"
-		<< "7 - Load from file\n"
-		<< "0 - Exit\n\n";
+		<< "1. Add 2D figure\n"
+		<< "2. Add 3D figure\n"
+		<< "3. Remove 2D figure\n"
+		<< "4. Remove 3D figure\n"
+		<< "5. Display contents\n"
+		<< "6. Save to file\n"
+		<< "7. Load from file\n"
+		<< "0. Exit\n\n";
 
 
 keyscan:

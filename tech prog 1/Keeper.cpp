@@ -49,25 +49,13 @@ bool Keeper::removeFigure3D(int index)
 void Keeper::save()
 {
 	std::ofstream file("data.txt");
+	std::streambuf* oldCout = std::cout.rdbuf();
+	std::cout.rdbuf(file.rdbuf());
 
-	if (!file.is_open())
-	{
-		std::cout << "Error opening file for saving!\n";
-		return;
-	}
+	describe();
 
-	for (const Figure2D& figure2D : figures2D)
-	{
-		file << "2D " << figure2D.type << ' ' << figure2D.dimensions << ' ' << figure2D.area << ' ' << figure2D.areaOnScreen << '\n';
-	}
-
-	for (const Figure3D& figure3D : figures3D)
-	{
-		file << "3D " << figure3D.type << ' ' << figure3D.dimensions << ' ' << figure3D.volume << ' ' << figure3D.areaOnScreen << '\n';
-	}
-
-	file << "\t\t\t";
-	file.close();
+	std::cout << "\t\t\t";
+	std::cout.rdbuf(oldCout);
 }
 
 bool Keeper::load()
